@@ -34,8 +34,8 @@ Register-ArgumentCompleter -Native -CommandName 'zoxide' -ScriptBlock {
             break
         }
         'zoxide;add' {
-            [CompletionResult]::new('-s', '-s', [CompletionResultType]::ParameterName, 'The rank to increment the entry if it exists or initialize it with if it doesn''t')
-            [CompletionResult]::new('--score', '--score', [CompletionResultType]::ParameterName, 'The rank to increment the entry if it exists or initialize it with if it doesn''t')
+            [CompletionResult]::new('-s', '-s', [CompletionResultType]::ParameterName, 's')
+            [CompletionResult]::new('--score', '--score', [CompletionResultType]::ParameterName, 'score')
             [CompletionResult]::new('-h', '-h', [CompletionResultType]::ParameterName, 'Print help')
             [CompletionResult]::new('--help', '--help', [CompletionResultType]::ParameterName, 'Print help')
             [CompletionResult]::new('-V', '-V ', [CompletionResultType]::ParameterName, 'Print version')

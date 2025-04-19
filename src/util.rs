@@ -62,7 +62,7 @@ impl Fzf {
             if cfg!(target_os = "linux") {
                 r"--preview=\command -p ls -Cp --color=always --group-directories-first {2..}"
             } else {
-                r"--preview=\command -p eza --icons=always --all {2..}"
+                r"--preview=\command -p /opt/homebrew/bin/eza --icons=always --all | column -t {2..}"
             },
             // Rounded edges don't display correctly on some terminals.
             "--preview-window=down,30%,sharp",
